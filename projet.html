@@ -1,37 +1,167 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/Style.css"> </head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-   
 </head>
-<body>
-    <header>
-        <div>
-            <a href="">Mon Portfolio</a>
+<body> 
+    <header> 
+        <div> 
+            <a href="">Mon Portfolio</a> 
         </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" >Accueil</a></li>
-                    <li><a href="projet.html"class="active">Projets</a></li>
-                    <li><a href="passion.html">Passion</a></li>
-                    <li><a href="divertissement.html">Divertissement</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            </nav>
-    </header>
-    <main>
-        <h1>nos projets</h1>
-    </main>
+        <nav> 
+            <ul> 
+                <li><a href="index.html">Accueil</a></li> 
+                <li><a href="projets.html"class="active">Projets</a></li> 
+                <li><a href="passions.html">Passions</a></li> 
+                <li><a href="divertissement.html">Divertissement</a></li> 
+                <li><a href="contact.html">contact</a></li>
+            </ul> 
+        </nav> 
+        
+    </header> 
+   <main>
+        <h1>Mes Réalisations</h1>
+    <section class="projets">
+        <div class="projets-container">
+            <!-- PROJET 1 -->
+            <div class="carte">
+                <img src="image/e-commerce.jpg" alt="e-commerce"width="300">
+                <div class="contenu">
+                    <h3>Site E-commerce</h3>
+                    <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+
+                    <div class="liens">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 2 -->
+            <div class="carte">
+                <img src="image/gestionnaire.jpg" alt="gestionnaire" width="300">
+                <div class="contenu">
+                    <h3>Gestionnaire de Tâches</h3>
+                    <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                    </div>
+
+                    <div class="liens">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 3 -->
+            <div class="carte">
+                <img src="image/blog.jpg" alt="blog"width="300">
+                <div class="contenu">
+                    <h3>Blog Personnel</h3>
+                    <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
+
+
+                    <div class="tags">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                    </div>
+
+                    <div class="liens">
+                      <a href="#"><i class="fab fa-github"></i> Code</a>
+                      <a href="#"><i class="fas fa-clock"></i> Bientôt</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 4 -->
+            <div class="carte">
+                <img src="image/analyse.jpg" alt="analyse"width="300">
+                <div class="contenu">
+                    <h3>Dashboard d'Analyse</h3>
+                    <p>Visualisation de données dynamiques avec Python et Matplotlib.</p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Data</span>
+                    </div>
+
+                    <div class="liens">
+                         <a href="#"><i class="fab fa-github"></i> Code</a>
+                         <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PROJET 5 -->
+            <div class="carte">
+                <img src="image/apk.jpg" alt="apk" width="300">
+
+                <div class="contenu">
+                    <h3>Application Météo</h3>
+                    <p>Application utilisant une API en temps réel pour afficher la météo mondiale.</p>
+
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>API</span>
+                    </div>
+
+                    <div class="liens">
+                      <a href="#"><i class="fab fa-github"></i> Code</a>
+                      <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 6 -->
+
+            <div class="carte">
+                <img src="image/ui design.jpg" alt="ui design"width="300">
+                <div class="contenu">
+                    <h3>Maquette Mobile UI</h3>
+                    <p>Conception d'une interface utilisateur moderne pour une application de fitness.</p>
+
+                    <div class="tags">
+                        <span>Figma</span>
+                        <span>Design</span>
+                    </div>
+
+                    <div class="liens">
+                        <a href="#"><i class="fas fa-pen-nib"></i> Design</a>
+                        <a href="#"><i class="fas fa-eye"></i> Aperçu</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+   </main>
     <footer>
         <p>© 2026 Merveidie. Tous droits réservés.</p>
-        <img src="image/MLM 2.png" alt="MLM 2"width= "30"> <img src="image/MLM 1.png" alt="MLM 1"width= "30"> <img src="image/MLM 3.png" alt="MLM 3"width="30">
+        <a href=""><img src="image/MLM 2.png" alt="MLM 2"width= "30"></a>
+        <a href=""><img src="image/MLM 1.png" alt="MLM 1"width= "30"></a>
+        <a href=""><img src="image/MLM 3.png" alt="MLM 3"width="30"></a>
     </footer>
 </body>
 </html>
