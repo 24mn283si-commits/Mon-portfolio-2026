@@ -3,35 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Mon Portfolio - Passion</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-   
 </head>
 <body>
     <header>
         <div>
-            <a href="">Mon Portfolio</a>
+            <a href="index.html">Mon Portfolio</a>
         </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" >Accueil</a></li>
-                    <li><a href="projet.html">Projets</a></li>
-                    <li><a href="passion.html"class="active">Passion</a></li>
-                    <li><a href="divertissement.html">Divertissement</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projet.html">Projets</a></li>
+                <li><a href="passion.html" class="active">Passion</a></li>
+                <li><a href="divertissement.html">Divertissement</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <h1>decouvrez la passion</h1>
+        <section class="passion-header">
+            <h1>Découvrez mes Passions</h1>
+            <div class="separator"></div>
+            <p>Ce qui me motive à apprendre et à créer chaque jour.</p>
+        </section>
+
+        <section class="passion-grid">
+            <div class="passion-item web">
+                <div class="passion-image">
+                    <img src="image/web.jpg" alt="Développement Web">
+                </div>
+                <div class="passion-content">
+                    <h3>Développement Web</h3>
+                    <p>Donner vie à des idées à travers le code. J'aime créer des interfaces fluides et des expériences utilisateur uniques.</p>
+                    <div class="tags-passion">
+                        <span>Laravel</span>
+                        <span>Fullstack</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="passion-item ia">
+                <div class="passion-image">
+                    <img src="image/ia.jpg" alt="IA">
+                </div>
+                <div class="passion-content">
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Fasciné par le futur et les capacités de l'IA à transformer nos métiers et notre quotidien.</p>
+                    <div class="tags-passion">
+                        <span>Automation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="passion-item design">
+                <div class="passion-image">
+                    <img src="image/ui design.jpg" alt="Design">
+                </div>
+                <div class="passion-content">
+                    <h3>Design & UI/UX</h3>
+                    <p>L'esthétique au service de la fonction. J'aime créer des visuels percutants et minimalistes.</p>
+                    <div class="tags-passion">
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="passion-item learning">
+                <div class="passion-content">
+                    <div class="passion-image">
+                        <img src="image/apprentissage.jpg" alt="Veille">
+                    </div>
+                    <h3>Apprentissage Continu</h3>
+                    <p>Toujours en quête de nouvelles technologies pour rester à la pointe du développement.</p>
+                    <div class="tags-passion">
+                        <span>Veille Tech</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
         <p>© 2026 Merveidie. Tous droits réservés.</p>
-        <img src="image/MLM 2.png" alt="MLM 2"width= "30"> <img src="image/MLM 1.png" alt="MLM 1"width= "30"> <img src="image/MLM 3.png" alt="MLM 3"width="30">
+        <a href=""><img src="image/MLM 2.png" alt="MLM 2" width="30"></a>
+        <a href=""><img src="image/MLM 1.png" alt="MLM 1" width="30"></a>
+        <a href=""><img src="image/MLM 3.png" alt="MLM 3" width="30"></a>
     </footer>
 </body>
 </html>

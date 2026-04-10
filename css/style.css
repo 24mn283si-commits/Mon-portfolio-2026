@@ -460,3 +460,280 @@ h1::after{
     background-color: var(--violet-fonce);
 }
 
+
+
+/* divertiments*/
+
+
+/* --- DESIGN ALTERNÉ (HORS CARTES) --- */
+
+.divertissement-page {
+    padding-bottom: 5rem;
+}
+
+.intro-title {
+    text-align: center;
+    padding: 6rem 0 4rem;
+}
+
+.intro-title h1 {
+    font-size: 3.5rem;
+    color: var(--violet-fonce);
+    margin: 0;
+}
+
+/* La ligne sous le titre */
+.separator {
+    width: 80px;
+    height: 5px;
+   /* background: var(--orange-vif);*/
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Structure des lignes */
+.hobby-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    max-width: 1100px;
+    margin: 0 auto 100px auto;
+    padding: 0 20px;
+}
+
+/* Inversion pour une ligne sur deux */
+.hobby-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.hobby-image {
+    flex: 1;
+    position: relative;
+}
+
+.hobby-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 20px 20px 0px var(--violet-doux); /* Effet de décalage */
+    transition: transform 0.4s ease;
+}
+
+.hobby-row:hover .hobby-image img {
+    transform: translate(-10px, -10px);
+}
+
+.hobby-text {
+    flex: 1;
+}
+
+.number {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--gris-clair);
+    display: block;
+    line-height: 1;
+    margin-bottom: -20px;
+    opacity: 0.5;
+}
+
+.hobby-text h2 {
+    font-size: 2.2rem;
+    color: var(--violet-fonce);
+    margin-bottom: 20px;
+    text-align: left; /* Annule le centrage global si besoin */
+}
+
+.hobby-text h2::after {
+    display: none; /* On enlève la barre par défaut des h2 pour ce design */
+}
+
+.hobby-text p {
+    font-size: 1.15rem;
+    color: var(--gris-fonce);
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hobby-tags {
+    font-weight: bold;
+    color: var(--violet-doux);
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+/* Responsive : On empile tout sur mobile */
+@media (max-width: 900px)
+    .hobby-row, .hobby-row.reverse {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .hobby-image img {
+        height: 300px;
+        box-shadow: 10px 10px 0px var(--violet-doux);
+    }
+    .hobby-text h2 {
+        text-align: center;
+    }
+    /*stylisation des boutons afrobeat, activité et autres...*/
+.lien1 {
+    margin: 10px 0;
+}
+.lien1 span {
+    background: #eef0ff;
+    color: #6c63ff;
+    padding: 5px 12px;
+    margin: 5px 5px 0 0;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+}
+/*stylisation des boutons...*/
+.lien2 {
+    margin: 10px 0;
+}
+.lien2 span {
+    background: #eef0ff;
+    color: #6c63ff;
+    padding: 5px 12px;
+    margin: 5px 5px 0 0;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+}
+/*stylisation des boutons...*/
+.lien3{
+    margin: 10px 0;
+}
+.lien3 span {
+    background: #eef0ff;
+    color: #6c63ff;
+    padding: 5px 12px;
+    margin: 5px 5px 0 0;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+}
+/*recadrer la photo à l'interieur sans bouger la taille de l'image de la dame avec le casque ni la forme*/
+section div img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;/*force l'image à remplir le cadre sans se déformer*/
+    object-position: center 25%;
+    border-radius: 20px;
+}
+
+/*Partie passion*/
+/* --- STYLES SPÉCIFIQUES PAGE PASSION --- */
+
+.passion-header {
+    text-align: center;
+    padding: 6rem 0 3rem;
+}
+
+.passion-header p {
+    color: var(--gris-fonce);
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.passion-grid {
+    max-width: 1100px;
+    margin: 0 auto 8rem;
+    padding: 20px;
+    display: grid;
+    /* Grille à 2 colonnes */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.passion-item {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.passion-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(108, 99, 255, 0.1);
+}
+
+.passion-image {
+    height: 230px;
+    overflow: hidden;
+}
+
+.passion-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.passion-item:hover .passion-image img {
+    transform: scale(1.1);
+}
+
+.passion-content {
+    padding: 30px;
+}
+
+.passion-content h3 {
+    color: var(--violet-doux);
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+/* On enlève la barre sous les H3 dans cette section pour le look Bento */
+.passion-content h3::after {
+    display: none;
+}
+
+.passion-content p {
+    color: var(--gris-fonce);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Boutons types badges (comme Projets) */
+.tags-passion {
+    margin-top: 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.tags-passion span {
+    background: #eef0ff;
+    color: var(--violet-doux);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* --- RESPONSIVE PASSION --- */
+
+@media (max-width: 850px) {
+    .passion-grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+    }
+}
+.passion-header::after {
+    content: '';
+    display: block;
+}
+
+
+    
